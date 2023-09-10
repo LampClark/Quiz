@@ -1,0 +1,11 @@
+Quiz,Question,Option 1,Option 2,Option 3,Option 4,Answer
+Ruby Quiz,What type of programming language is Ruby?,Procedural,Object-oriented,Functional,Scripting,Object-oriented
+Ruby Quiz,Who is the creator of Ruby?,Guido van Rossum,Linus Torvalds,Larry Wall,Yukihiro Matsumoto,Yukihiro Matsumoto
+Ruby Quiz,Which of the following is the correct way to define a class in Ruby?,class MyClass,class = MyClass,Myclass class,Myclass(),class MyClass
+Ruby Quiz,Variables that start with two '@' symbols are what kind of variables in Ruby,Local variable,Global variable,Instance variable,Class variable,Class variable
+Ruby Quiz,Which of the languages syntax matches with the Ruby’s syntax?,Python,Perl,Java,C++,Perl
+Ruby Quiz,What is the extension used for saving the ruby file?,rrb,ruby,rb,rub,rb
+Ruby Quiz,Ruby runs on which platform?,Mac OS,Linux,Windows,All of the Above,All of the Above
+Ruby Quiz,What does the .upcase method do?,Convert the string to lowercase,Convert the string to uppercase,Convert only lowercase string to uppercase and vice-versa,None of above,Convert the string to uppercase
+Ruby Quiz,Ruby was written in which language?,C++,C,Java,Objective C,C
+Ruby Quiz,What is Ruby?,markup language,procedural language,scripting language,stylesheet language,scripting language

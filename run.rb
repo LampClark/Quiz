@@ -1,5 +1,6 @@
 require './quiz_data.rb'
 require './quiz_question.rb'
+require 'colorize'
 
 ruby_quiz = QuizData.new("Ruby Quiz (10 questions)", [
     {

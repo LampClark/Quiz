@@ -13,13 +13,10 @@ class QuizQuestion
     end
 
     def start
-        puts "Welcome to the Quiz Game!"
-        print "Enter your name: "
-        player_name = gets.chomp
-        set_player_name(player_name)
+        puts "Welcome to the Quiz Game!".magenta
         loop do
             list_quiz_topics
-            print "Enter the number of your choice or 'q' to Quit: "
+            print "Enter the number of your choice or 'q' to Quit: ".cyan
             choice = gets.chomp
             break if choice.downcase == 'q'
 
@@ -27,14 +24,19 @@ class QuizQuestion
             if choice >= 0 && choice < @quizzes.length
                 @quizzes[choice].play
             else
-                puts "Invalid choice. Please select a valid quiz topic."
+                puts "Invalid choice. Please select a valid quiz topic.".red
             end
         end
-        puts "Thank you for playing the Quiz Game."
+        puts "Thank you for playing the Quiz Game.".light_green
     end
 end
 
 def list_quiz_topics
-    puts "choose a quiz topic to begin:"
-    @quizzes.each_with_index { |quiz, index| puts "#{index + 1}. #{quiz.instance_variable_get(:@name)}" }
+    puts "choose a quiz topic to begin:".green
+    @quizzes.each_with_index do |quiz, index|
+        quiz_name = quiz.instance_variable_get(:@name.name).to_s.light_blue
+        quiz_number = (index + 1).to_s.light_green
+        puts "#{quiz_number}. #{quiz_name}"
+    end
 end
+# puts "#{(index + 1).red}. #{quiz.instance_variable_get(:@name.name)}" }

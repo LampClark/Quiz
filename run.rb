@@ -53,8 +53,64 @@ ruby_quiz = QuizData.new("Ruby Quiz (10 questions)", [
         answer: 2,
     },
 ])
+general_knowledge = QuizData.new("General Knowledge (5 Questions)", [
+    {
+        question: "What is the capital of Japan?",
+        options: ["Tokyo", "Kyoto", "Osaka", "Seoul"],
+        answer: 0,
+    },
+    {
+        question: "Who painted the Mona Lisa?",
+        options: ["pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Michelangelo"],
+        answer: 2,
+    },
+    {
+        question: "Which gas do plants absorb from the atmosphere?",
+        options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+        answer: 1,
+    },
+    {
+        question: "Who wrote the novel '1984'?",
+        options: ["J.K. Rowling", "George Orwell", "Ernest Hemingway", "F.Scott Fitzgerald"],
+        answer: 1,
+    },
+    {
+        question: "What is the largest planet in our solar system?",
+        options: ["Earth", "Venus", "Mars", "Jupiter"],
+        answer: 3,
+    },
+])
+history = QuizData.new("History (5 Questions)", [
+    {
+        question: "Who was the first President of the United States?",
+        options: ["John Adams", "Thomas Jefferson", "Benjamin Franklin", "George Washington"],
+        answer: 3,
+    },
+    {
+        question: "In which year did Christopher Columbus first arrive in the Americas?",
+        options: ["1492", "1521", "1607", "1776"],
+        answer: 0,
+    },
+    {
+        question: "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+        options: ["Joseph Stalin", "Vladmir Putin", "Nikita Khrushchev", "Mikhail Gorbachev"],
+        answer: 2,
+    },
+    {
+        question: "The Great Wall of China was primarily built to defend against which group?",
+        options: ["Mongols", "Romans", "Vikings", "Aztecs"],
+        answer: 0,
+    },
+    {
+        question: "What year did World War I begin?",
+        options: ["1905", "1914", "1939", "1945"],
+        answer: 1,
+    },
+])
 
 quiz_game = QuizQuestion.new
 quiz_game.add_quiz(ruby_quiz)
+quiz_game.add_quiz(general_knowledge)
+quiz_game.add_quiz(history)
 
 quiz_game.start

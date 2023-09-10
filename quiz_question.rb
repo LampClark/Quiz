@@ -30,8 +30,8 @@ class QuizQuestion
                 puts "Invalid choice. Please select a valid quiz topic."
             end
         end
+        puts "Thank you for playing the Quiz Game."
     end
-    puts "Thank you for playing the Quiz Game."
 end
 
 def list_quiz_topics
